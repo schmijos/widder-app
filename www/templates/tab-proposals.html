@@ -1,0 +1,12 @@
+<ion-view view-title="Proposals">
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-avatar item-icon-right" ng-repeat="proposal in proposals" type="item-text-wrap" href="#/tab/proposals/{{proposal.id}}">
+                <img ng-src="{{proposal.picture}}">
+                <h2>{{proposal.name}}</h2>
+                <p>{{proposal.duration}}</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
